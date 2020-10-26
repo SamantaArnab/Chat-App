@@ -7,7 +7,9 @@ socket.on('message', (message) => {
 document.querySelector("#chat-form").addEventListener('submit', (e) =>{
     e.preventDefault()
     const sentMessage = e.target.elements.message.value
-    socket.emit('sentMessage', sentMessage)
+    socket.emit('sentMessage', sentMessage, (deliveryMessage) => {
+        console.log(deliveryMessage)
+    })
 })
 document.querySelector('#location-button').addEventListener('click',() => {
     if(!navigator.geolocation) {
