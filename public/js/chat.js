@@ -9,3 +9,11 @@ document.querySelector("#chat-form").addEventListener('submit', (e) =>{
     const sentMessage = e.target.elements.message.value
     socket.emit('sentMessage', sentMessage)
 })
+document.querySelector('#location-button').addEventListener('click',() => {
+    if(!navigator.geolocation) {
+        return alert('Geolocation is not supported')
+    }
+    navigator.geolocation.getCurrentPosition((position) => {
+        socket.emit('sentLocation',{latitude: position.coords.latitude, longitude: position.coords.longitude})
+    })
+})
