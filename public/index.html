@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-    </head>
-    <body>
-        Chat App
-        <form id="chat-form">
-            <input name="message" type="text">
-            <button>Send</button>
-            <button id="location-button">Send Location</button>
-        </form>
-        <script src="/socket.io/socket.io.js"></script>
-        <script src="/js/chat.js"></script>
-    </body>
+<head>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!-- <div class="form-body">
+        <div id="header-text">
+            <img src="Man-img.png" />
+            <div id="name">XXX</div>
+        </div>
+        <div id="message-container"> -->
+            <!-- <div id="test">
+                    <div id="message">Hii to you</div>
+                    <div id="time"><span>tick1</span></div>
+            </div>
+            <div id="test">
+                            <div id="message">Kuch bhi kar de</div>
+                            <div id="time"><span>tick2</span></div>
+            </div> -->
+        <!-- </div>
+        <form id="message-form">
+            <div>
+                <input id="message-input" type="text">
+            </div>
+            <div>
+                <button><img src="arrow-symbol.png" /></button>
+            </div>
+        </form> -->
+        <!-- <button id="location-button">Send Location</button> -->
+    <!-- </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script> -->
+
+    <div class="form-body">
+        <div id="Header">
+            <div>
+                <p>WhatsApp</p>
+            </div>
+                <!-- Search -->
+            <div>
+                <a href=#>CHATS</a>
+                <a href=#>STATUS</a>
+                <a href=#>CALLS</a>
+            </div>
+        </div>
+        <div id="body">
+            <div id="contact-item">
+                <img src="Man-img.png" />
+                <div id="name-msg">
+                        <div id="contact-name">name1</div>
+                        <div id="contact-msg">msg1</div>
+                </div>
+                
+            </div>
+            <div id="contact-item">
+                <img src="Man-img.png" />
+                <div id="name-msg">
+                        <div id="contact-name">name2</div>
+                        <div id="contact-msg">msg2</div>
+                </div>
+            </div>
+            <div id="contact-item">
+                <img src="Man-img.png" />
+                <div id="name-msg">
+                        <div id="contact-name">name3</div>
+                        <div id="contact-msg">msg3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
